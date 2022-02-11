@@ -1,9 +1,10 @@
 // IMPORTS
+@import "modern-normalize/modern-normalize.css";
 @import "@fontsource/ropa-sans/400.css";
 @import "@fontsource/rokkitt/400.css";
 
 // VARIABLES
-$primary: #00bce5;
+$primary: #00a2c7;
 
 // GLOBAL STYLING
 body {
@@ -31,7 +32,7 @@ p {
 }
 
 //HERO
-section.hero {
+.hero {
   display: flex;
   flex-direction: column;
 
