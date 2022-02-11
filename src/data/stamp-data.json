@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Flor de palo borracho",
+    "src": "/stamps/01.png"
+  },
+  {
+    "id": 2,
+    "name": "Flor de campanilla",
+    "src": "/stamps/02.png"
+  },
+  {
+    "id": 3,
+    "name": "Flor de cactus",
+    "src": "/stamps/03.png"
+  },
+  {
+    "id": 4,
+    "name": "Árbol",
+    "src": "/stamps/04.png"
+  },
+  {
+    "id": 5,
+    "name": "Girasol",
+    "src": "/stamps/05.png"
+  },
+  {
+    "id": 6,
+    "name": "Correspondencia",
+    "src": "/stamps/06.png"
+  },
+  {
+    "id": 7,
+    "name": "Agricultura",
+    "src": "/stamps/07.png"
+  },
+  {
+    "id": 8,
+    "name": "Pozo petrolero",
+    "src": "/stamps/08.png"
+  }
+]
