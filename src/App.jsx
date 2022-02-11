@@ -26,10 +26,7 @@ const App = () => {
         </div>
         <div className="hero-stamp-grid">
           {stamps.map((stamp) => (
-            <Stamp
-              {...stamp}
-              extraStyle={{ transform: `translateX(${stamp.id * -0.8}rem)` }}
-            />
+            <Stamp {...stamp} />
           ))}
         </div>
       </section>
