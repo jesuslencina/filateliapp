@@ -38,5 +38,55 @@
     "id": 8,
     "name": "Pozo petrolero",
     "src": "/stamps/08.png"
+  },
+  {
+    "id": 9,
+    "name": "Chinita del Campo",
+    "src": "/stamps/09.png"
+  },
+  {
+    "id": 10,
+    "name": "Pata de vaca",
+    "src": "/stamps/10.png"
+  },
+  {
+    "id": 11,
+    "name": "Begonia",
+    "src": "/stamps/11.png"
+  },
+  {
+    "id": 12,
+    "name": "Notro-Ciruelillo",
+    "src": "/stamps/12.png"
+  },
+  {
+    "id": 13,
+    "name": "República Argentina",
+    "src": "/stamps/13.png"
+  },
+  {
+    "id": 14,
+    "name": "Girasol sepia",
+    "src": "/stamps/14.png"
+  },
+  {
+    "id": 16,
+    "name": "San Martín",
+    "src": "/stamps/16.png"
+  },
+  {
+    "id": 17,
+    "name": "Flor de patito",
+    "src": "/stamps/17.png"
+  },
+  {
+    "id": 18,
+    "name": "Carnaval",
+    "src": "/stamps/18.png"
+  },
+  {
+    "id": 19,
+    "name": "Coloque aquí sus estampillas",
+    "src": "/stamps/19.png"
   }
 ]

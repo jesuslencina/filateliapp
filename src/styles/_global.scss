@@ -1,5 +1,6 @@
 // VARIABLES
 $primary: #00a2c7;
+$desktop-breakpoint: 769px;
 
 // BODY STYLING
 body {
@@ -45,6 +46,22 @@ p {
   line-height: 135%;
 }
 
+@media screen and (min-width: $desktop-breakpoint) {
+  h1,
+  h2 {
+    font-size: 4.25rem;
+  }
+
+  p {
+    font-size: 1.75rem;
+  }
+
+  button,
+  .btn {
+    font-size: 1.35rem;
+  }
+}
+
 button,
 .btn {
   display: inline-block;
@@ -55,6 +72,11 @@ button,
   text-decoration: none;
   padding: 0.45rem 2rem;
   border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: darken($primary, 20%);
+  }
 }
 
 // ANIMATIONS
@@ -85,12 +107,12 @@ button,
 @keyframes puff-in-center {
   0% {
     filter: drop-shadow(0px 0px 0px #0000004d);
-    transform: scale(2);
+    transform: scale(2) rotate(-2deg);
     opacity: 0;
   }
   100% {
-    filter: drop-shadow(0px 0px 4px #0000004d);
-    transform: scale(1);
+    filter: drop-shadow(0px 0px 4px #00000091);
+    transform: scale(1) rotate(0deg);
     opacity: 1;
   }
 }

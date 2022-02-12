@@ -10,4 +10,11 @@
     gap: 1rem;
     justify-items: center;
   }
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    .container {
+      grid-template-columns: repeat(7, 1fr);
+      gap: 2.5rem;
+    }
+  }
 }

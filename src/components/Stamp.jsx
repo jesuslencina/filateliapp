@@ -5,7 +5,7 @@ const Stamp = ({ id, src, name }) => (
     src={src}
     alt={name}
     className="stamp"
-    style={{ animationDelay: `${id * 0.1}s` }}
+    style={{ animationDelay: `${id * 0.15}s` }}
     lazy
   />
 );

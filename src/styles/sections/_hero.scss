@@ -8,7 +8,7 @@
   .logo {
     display: flex;
     align-items: center;
-    @include fade-in-animation($delay: 0.1s);
+    @include fade-in-animation($delay: 0.15s);
 
     p {
       margin-left: 0.5rem;
@@ -34,18 +34,52 @@
   .hero-stamp-grid {
     position: absolute;
     top: 13vh;
-    right: -16vw;
+    right: -8vw;
     z-index: -1;
 
-    transform: rotate(7deg);
+    transform: rotate(11deg);
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 1.75rem;
 
     .stamp {
       width: 4rem;
+    }
+  }
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    align-items: flex-end;
+    text-align: right;
+    margin-top: 20vh;
+    height: 72.5vh;
+
+    .logo {
+      margin-right: 1vw;
+      p {
+        font-size: 1.75rem;
+      }
+    }
+
+    .hero-text {
+      margin-right: 1vw;
+
+      p {
+        margin-top: 0.75rem;
+      }
+    }
+
+    .hero-stamp-grid {
+      grid-template-columns: repeat(6, 1fr);
+      left: -25vh;
+      top: -12vh;
+      right: unset;
+      transform: rotate(-225deg);
+      z-index: 1;
+
+      .stamp {
+        width: 9rem;
+      }
     }
   }
 }
