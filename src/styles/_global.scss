@@ -53,7 +53,7 @@ a {
   @include text-primary();
 }
 
-@media screen and (min-width: $bigger-mobile-breakpoint) {
+@media screen and (min-width: $tablet-breakpoint) {
   h1,
   h2 {
     font-size: 4.25rem;
