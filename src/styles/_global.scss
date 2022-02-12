@@ -46,6 +46,10 @@ p {
   line-height: 135%;
 }
 
+a {
+  @include text-primary();
+}
+
 @media screen and (min-width: $desktop-breakpoint) {
   h1,
   h2 {

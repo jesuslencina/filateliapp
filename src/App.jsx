@@ -38,6 +38,14 @@ const App = () => {
           ))}
         </div>
       </section>
+      <footer>
+        <p>
+          © 2022 - Jesús Lencina. Realizado con fines de práctica.{" "}
+          <a href="https://github.com/jesuslencina/filateliapp">
+            Ver en Github
+          </a>
+        </p>
+      </footer>
     </div>
   );
 };
