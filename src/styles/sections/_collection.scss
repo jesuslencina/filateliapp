@@ -1,0 +1,13 @@
+.collection {
+  @include spaced-section();
+  @include bg-primary();
+  @include text-white();
+  @include fade-in-animation($delay: 1s);
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+  }
+}

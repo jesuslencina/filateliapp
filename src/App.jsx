@@ -30,6 +30,14 @@ const App = () => {
           ))}
         </div>
       </section>
+      <section className="collection" id="coleccion">
+        <h2>Colección</h2>
+        <div className="container">
+          {stamps.map((stamp) => (
+            <Stamp {...stamp} />
+          ))}
+        </div>
+      </section>
     </div>
   );
 };

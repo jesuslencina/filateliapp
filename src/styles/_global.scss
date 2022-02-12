@@ -5,6 +5,7 @@ $primary: #00a2c7;
 body {
   margin: 0;
   font-family: "Rokkitt", serif;
+  scroll-behavior: smooth;
 }
 
 // MIXINS
@@ -16,16 +17,21 @@ body {
   color: white;
 }
 
+@mixin bg-primary {
+  background-color: $primary;
+}
+
 @mixin spaced-section {
   padding: 1.5rem;
 }
 
 @mixin spawn-in-animation {
-  animation: puff-in-center 0.4s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s both;
+  animation: puff-in-center 0.4s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s
+    backwards;
 }
 
-@mixin fade-in-animation {
-  animation: fade-in 0.75s ease-in-out;
+@mixin fade-in-animation($delay) {
+  animation: fade-in 0.75s ease-in-out $delay backwards;
 }
 
 // CUSTOM STYLES FOR ELEMENTS
@@ -78,10 +84,12 @@ button,
 
 @keyframes puff-in-center {
   0% {
+    filter: drop-shadow(0px 0px 0px #0000004d);
     transform: scale(2);
     opacity: 0;
   }
   100% {
+    filter: drop-shadow(0px 0px 4px #0000004d);
     transform: scale(1);
     opacity: 1;
   }
