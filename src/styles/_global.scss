@@ -1,6 +1,9 @@
 // VARIABLES
 $primary: #00a2c7;
-$desktop-breakpoint: 769px;
+$bigger-mobile-breakpoint: 377px;
+$tablet-breakpoint: 769px;
+$big-screen-breakpoint: 1441px;
+$really-big-screen-breakpoint: 2200px;
 
 // BODY STYLING
 body {
@@ -50,7 +53,7 @@ a {
   @include text-primary();
 }
 
-@media screen and (min-width: $desktop-breakpoint) {
+@media screen and (min-width: $bigger-mobile-breakpoint) {
   h1,
   h2 {
     font-size: 4.25rem;
@@ -63,6 +66,21 @@ a {
   button,
   .btn {
     font-size: 1.35rem;
+  }
+}
+
+@media screen and (min-width: $really-big-screen-breakpoint) {
+  h1,
+  h2 {
+    font-size: 6.25rem;
+  }
+  p {
+    font-size: 2.75rem;
+  }
+
+  button,
+  .btn {
+    font-size: 2.35rem;
   }
 }
 

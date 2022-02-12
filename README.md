@@ -4,7 +4,7 @@ A simple site containing some Argentinian stamps I've always had myself :)
 
 Made for styling practice purposes.
 
-### [View Live](https://jesuslencina.github.io/filateliapp/)
+### [View Live](https://filateliapp.vercel.app/)
 
 ---
 
