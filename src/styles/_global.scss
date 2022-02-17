@@ -1,9 +1,9 @@
 // VARIABLES
 $primary: #00a2c7;
-$bigger-mobile-breakpoint: 377px;
-$tablet-breakpoint: 769px;
-$big-screen-breakpoint: 1441px;
-$really-big-screen-breakpoint: 2200px;
+$bigger-mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$laptop-breakpoint: 1024px;
+$big-screen-breakpoint: 1900px;
 
 // BODY STYLING
 body {
@@ -26,7 +26,11 @@ body {
 }
 
 @mixin spaced-section {
-  padding: 1.5rem;
+  padding: 5.5vw;
+
+  @media screen and (min-width: $laptop-breakpoint) {
+    padding: 3.5vw;
+  }
 }
 
 @mixin spawn-in-animation {
@@ -69,10 +73,10 @@ a {
   }
 }
 
-@media screen and (min-width: $really-big-screen-breakpoint) {
+@media screen and (min-width: $big-screen-breakpoint) {
   h1,
   h2 {
-    font-size: 6.25rem;
+    font-size: 4.75rem;
   }
   p {
     font-size: 2.75rem;
@@ -80,7 +84,7 @@ a {
 
   button,
   .btn {
-    font-size: 2.35rem;
+    font-size: 1.95rem;
   }
 }
 

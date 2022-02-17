@@ -26,7 +26,7 @@ const App = () => {
         </div>
         <div className="hero-stamp-grid">
           {stamps.map((stamp) => (
-            <Stamp {...stamp} />
+            <Stamp key={stamp.id} {...stamp} />
           ))}
         </div>
       </section>

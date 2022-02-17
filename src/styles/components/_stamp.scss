@@ -12,7 +12,7 @@
     transform: scale(1.2) rotate(-3deg) !important;
   }
 
-  @media screen and (min-width: $really-big-screen-breakpoint) {
+  @media screen and (min-width: $big-screen-breakpoint) {
     width: 14rem;
   }
 }
