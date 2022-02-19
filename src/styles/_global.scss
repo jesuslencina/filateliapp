@@ -76,15 +76,15 @@ a {
 @media screen and (min-width: $big-screen-breakpoint) {
   h1,
   h2 {
-    font-size: 4.75rem;
+    font-size: 3.75vw;
   }
   p {
-    font-size: 2.75rem;
+    font-size: 1.75vw;
   }
 
   button,
   .btn {
-    font-size: 1.95rem;
+    font-size: 1.45vw;
   }
 }
 

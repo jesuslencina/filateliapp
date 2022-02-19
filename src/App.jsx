@@ -9,20 +9,22 @@ const App = () => {
   return (
     <div className="App">
       <section className="hero">
-        <div className="logo">
-          <Img src={logo} alt="Logo Filateliapp" width="28" height="31" />
-          <p>FILATELIAPP</p>
-        </div>
-        <div className="hero-text">
-          <h1>Recuperando la filatelia por internet</h1>
-          <p>
-            Quizás las cartas hayan quedado en el pasado, pero nuestras
-            estampillas merecen ser recordadas.
-          </p>
+        <div className="hero-static-part">
+          <div className="logo">
+            <Img src={logo} alt="Logo Filateliapp" width="28" height="31" />
+            <p>FILATELIAPP</p>
+          </div>
+          <div className="hero-text">
+            <h1>Recuperando la filatelia por internet</h1>
+            <p>
+              Quizás las cartas hayan quedado en el pasado, pero nuestras
+              estampillas merecen ser recordadas.
+            </p>
 
-          <a href="#coleccion" className="btn">
-            VER COLECCIÓN
-          </a>
+            <a href="#coleccion" className="btn">
+              VER COLECCIÓN
+            </a>
+          </div>
         </div>
         <div className="hero-stamp-grid">
           {stamps.map((stamp) => (
