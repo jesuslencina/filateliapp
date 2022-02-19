@@ -1,42 +1,47 @@
 //HERO
 .hero {
   height: 90vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 60% 39%;
+  overflow: hidden;
+
   @include spaced-section();
 
-  .logo {
-    display: flex;
-    align-items: center;
-    @include fade-in-animation($delay: 0.15s);
-    font-size: 1.25rem;
+  .hero-static-part {
+    grid-column-start: 1;
+    grid-column-end: 2;
 
-    p {
-      margin-left: 0.5rem;
-      font-family: "Ropa Sans", sans-serif;
+    .logo {
+      display: flex;
+      align-items: center;
+      @include fade-in-animation($delay: 0.15s);
+      font-size: 1.25rem;
+
+      p {
+        margin-left: 0.5rem;
+        font-family: "Ropa Sans", sans-serif;
+      }
+    }
+
+    .hero-text {
+      @include fade-in-animation($delay: 0.3s);
+
+      h1 {
+        margin-bottom: 0;
+        @include text-primary();
+      }
+
+      p {
+        margin-top: 0.75rem;
+      }
     }
   }
-
-  .hero-text {
-    width: 15rem;
-    @include fade-in-animation($delay: 0.3s);
-
-    h1 {
-      margin-bottom: 0;
-      @include text-primary();
-    }
-
-    p {
-      margin-top: 0.75rem;
-    }
-  }
-
   .hero-stamp-grid {
-    position: absolute;
-    top: 8rem;
-    right: -0.75rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
     z-index: -1;
 
+    margin-top: 10vh;
     transform: rotate(11deg);
 
     display: grid;
@@ -44,86 +49,48 @@
     gap: 1.75rem;
 
     .stamp {
-      width: 4rem;
-    }
-  }
-
-  @media screen and (min-width: $bigger-mobile-breakpoint) {
-    .hero-stamp-grid {
-      grid-template-columns: 1fr 1fr 1fr;
-      top: 12rem;
-      right: -2rem;
-      transform: rotate(36deg);
-
-      .stamp {
-        width: 6rem;
-      }
-    }
-  }
-
-  @media screen and (min-width: $tablet-breakpoint) {
-    align-items: flex-end;
-    text-align: right;
-    margin-top: 10rem;
-    height: 72.5vh;
-
-    .logo {
-      margin-right: 1rem;
-      font-size: 1.75rem;
-    }
-
-    .hero-text {
-      width: 25rem;
-
-      p {
-        margin-top: 0.75rem;
-      }
-    }
-
-    .hero-stamp-grid {
-      grid-template-columns: repeat(6, 1fr);
-      left: -31rem;
-      top: -10rem;
-      right: unset;
-      transform: rotate(-225deg);
-      z-index: 1;
-
-      .stamp {
-        width: 9rem;
-      }
+      width: 5rem;
     }
   }
 
   @media screen and (min-width: $laptop-breakpoint) {
-    .logo {
-      font-size: 0.21rem;
-    }
+    grid-template-columns: 30% 70%;
 
-    .hero-text {
-      width: 70%;
+    .hero-static-part {
+      grid-column-start: 2;
+      grid-column-end: 3;
+
+      margin-top: 15vh;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: end;
     }
 
     .hero-stamp-grid {
-      top: -14rem;
-      left: -22rem;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+
+      z-index: 1;
+
+      grid-template-columns: repeat(6, 1fr);
+
+      transform: rotate(145deg) translateY(35vh) translateX(-30vw);
+
+      .stamp {
+        width: 7rem;
+      }
     }
   }
 
   @media screen and (min-width: $big-screen-breakpoint) {
-    margin-top: 12.5vh;
-    margin-bottom: 3vh;
-    height: 78.5vh;
-
-    .hero-text {
-      width: 67.5vw;
-    }
-
     .hero-stamp-grid {
-      top: -16.5rem;
-      left: -11.5rem;
+      grid-template-columns: repeat(6, 1fr);
 
       .stamp {
-        width: 9.5rem;
+        width: 9rem;
       }
     }
   }
