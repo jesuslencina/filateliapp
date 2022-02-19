@@ -2,5 +2,11 @@ footer {
   p {
     font-size: 1.25rem;
     text-align: center;
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      a {
+        display: block;
+      }
+    }
   }
 }

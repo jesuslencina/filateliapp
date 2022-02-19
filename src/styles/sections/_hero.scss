@@ -2,7 +2,7 @@
 .hero {
   height: 90vh;
   display: grid;
-  grid-template-columns: 60% 39%;
+  grid-template-columns: 60% 40%;
   overflow: hidden;
 
   @include spaced-section();
@@ -53,6 +53,17 @@
     }
   }
 
+  @media screen and(min-width: $tablet-breakpoint) {
+    .hero-stamp-grid {
+      grid-template-columns: repeat(3, 1fr);
+      transform: rotate(36deg) translateX(-10vw) translateY(2vh);
+
+      .stamp {
+        width: 7.5rem;
+      }
+    }
+  }
+
   @media screen and (min-width: $laptop-breakpoint) {
     grid-template-columns: 30% 70%;
 
@@ -74,10 +85,11 @@
       grid-row-start: 1;
 
       z-index: 1;
+      height: 50vh;
 
       grid-template-columns: repeat(6, 1fr);
 
-      transform: rotate(145deg) translateY(35vh) translateX(-30vw);
+      transform: rotate(145deg) translateY(20vh) translateX(-30vw);
 
       .stamp {
         width: 7rem;
@@ -86,11 +98,18 @@
   }
 
   @media screen and (min-width: $big-screen-breakpoint) {
+    height: 95vh;
+
+    .logo img {
+      width: 2.5vw;
+      height: 2.75vw;
+    }
+
     .hero-stamp-grid {
-      grid-template-columns: repeat(6, 1fr);
+      transform: rotate(145deg) translateY(15vh) translateX(-22.5vw);
 
       .stamp {
-        width: 9rem;
+        width: 10vw;
       }
     }
   }
